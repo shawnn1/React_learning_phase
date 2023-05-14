@@ -1,15 +1,23 @@
 import React from 'react'
 import './App.css'
-import Event from './Event'
+import  Calculator  from './Calculator'
+
+
 
 
 function App() {
+
    
   
 //eventhandling
+
+
   return (
     <>
-      <Event/>
+      
+      <Calculator/>
+      
+    
     </>
   )
 }
