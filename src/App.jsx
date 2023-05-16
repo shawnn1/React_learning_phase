@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.css'
-import  Calculator  from './Calculator'
+import Button from './Button'
+
+import HoverCounter from './Hovercounter'
 
 
 
@@ -14,8 +16,9 @@ function App() {
 
   return (
     <>
-      
-      <Calculator/>
+      <h1>Hello world</h1>
+      <Button/>
+      <HoverCounter/>
       
     
     </>

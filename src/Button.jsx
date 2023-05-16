@@ -1,24 +1,13 @@
 import React from "react";
-import {AlertButton,Button,Upload} from "./Event";
-function Button1(){
-    return(
-        <>
-            <button onClick={()=>alert('clicked me')}>click me</button>
-            <AlertButton message="playing!">play movie</AlertButton>
-            <Upload/>
-            <div onClick={()=>{
-                alert('You clicked on div');
-            }}>
-            <button onClick={e=>
-                {
-                    e.stopPropagation();
-                    alert('Eating')
-                }
-            }>eat</button>
-                <Button onClick={()=>alert('playing')}>play</Button>
-            </div>
-            
-        </>
-    )
-}
-export default Button1;
+import Hoc from "./Hoc";
+const Button =(props) =>{
+   const {count,increment}=props;
+    
+        return(
+            <>
+                <button type="button" onClick={increment}>click me {count} times</button>
+            </>
+        )
+    }
+
+export default Hoc(Button);
